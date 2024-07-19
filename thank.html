@@ -1,0 +1,67 @@
+<html>
+<head>
+<title></title>
+<style>
+h1 {
+  color: gold;
+  font-family: "Sofia", cursive;
+  font-size: 15px;
+  font-weight: bold;
+  font-size: 2.6em;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top:150px;
+}
+h4 {
+  color: Black;
+  font-family: "Sofia", cursive;
+  font-weight: bold;
+  padding-top:160px;
+  
+}
+input[type="submit"]
+{
+  background: black;
+  border: 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  color: white 	;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+  background: lime;
+  animation-name: shake;
+}
+.animated {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+</style>
+</head>
+<body>
+<center>
+<strong>
+<h1> Thank you for booking Slot and Happy Journey</h1>
+</strong>
+<a href="homepage.html">
+<input class='animated' type='submit' value='Home'></a>
+<marquee direction="right">
+<h4>Be Safe | Keep Calm and Have a Safe Journey<h4>
+</marquee>
+</center>
+</body>
+</html>

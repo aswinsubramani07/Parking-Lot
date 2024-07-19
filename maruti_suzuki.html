@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Maruti Suzuki</title>
+<style>
+body {
+  background-image: url(https://wallpapercave.com/wp/wp3593833.png);
+  background-repeat: no-repeat;
+  background-size:1300px 600px;
+}
+h1 {
+  color: GoldenRod;
+  font-family: "Sofia", cursive;
+  font-size: 15px;
+  font-weight: bold;
+  font-size: 2.6em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+label 
+{
+ font-weight:bold;
+ font-size:20px;
+ 
+}
+input[type="submit"] {
+  background: orange;
+  border: 0;
+  width: 50px;
+  height: 20px;
+  border-radius: 3px;
+  color: white 	;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+  background: Blue;
+  animation-name: shake;
+}
+.animated {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+</style>
+</head>
+<body>
+<center>
+<div style="padding:200px;">
+<h1>Your Car</h1>
+<form method="POST" action="slot_booking.html">
+<br>
+<label for="maruti suzuki" >Maruti Suzuki: </label>
+<select name="maruti suzuki" id="maruti suzuki" required>
+  <option value="" >Please Select your Car</option>
+  <option value="">Swift</option>
+  <option value="">Baleno</option>
+  <option value="">Vitara Brezza</option>
+  <option value="">Wagon R</option>
+  <option value="">Alto</option>
+  <option value="">Dzire</option>
+  <option value="">Celerio</option>
+  <option value="">S-Presso</option>
+  <option value="">XL6</option>
+  <option value="">Ignis</option>
+  <option value="">Ciaz</option>
+  <option value="">Eeco</option>
+</select>
+</br>
+<div style="padding:20px">
+<input class='animated' type='submit' value='Next'></div>
+</div>
+</form>
+</center>
+</body>
+</html>

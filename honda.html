@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Honda</title>
+<style>
+body {
+  background-image: url(https://1000logos.net/wp-content/uploads/2018/03/Honda-logo.png);
+  background-repeat: no-repeat;
+  background-size:1300px 600px;
+}
+h2 {
+  color: GoldenRod;
+  font-family: "Sofia", cursive;
+  font-size: 15px;
+  font-weight: bold;
+  font-size: 2.6em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+label 
+{
+ font-weight:bold;
+ font-size:20px;
+}
+input[type="submit"] {
+  background: orange;
+  border: 0;
+  width: 50px;
+  height: 20px;
+  border-radius: 3px;
+  color: white 	;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+  background: Blue;
+  animation-name: shake;
+}
+.animated {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+</style>
+</head>
+<body>
+<center>
+<div style="padding:200px;">
+<h2>Your Car</h2>
+<form method="POST" action="slot_booking.html">
+<br>
+<label for="honda">Honda: </label>
+<select name="honda" id="honda" required>
+  <option value="">Please Select your Car</option>
+  <option value="">City</option>
+  <option value="">City 4th Generation</option>
+  <option value="">Amaze</option>
+  <option value="">Amaze Facelift</option>
+  <option value="">WR-V</option>
+  <option value="">HR-V</option>
+  <option value="">Jazz</option>
+  <option value="">Brio</option>
+</select>
+</br>
+<div style="padding:20px">
+<input class='animated' type='submit' value='Next'></div>
+</div>
+</form>	
+</center>
+</body>
+</html>

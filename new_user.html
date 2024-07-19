@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>New Registration</title>
+<style>
+* {
+  margin: 0;
+  padding: 20;
+}
+
+body {
+  background-image: url(https://www.thenbs.com/-/media/uk/new-images/by-section/knowledge/knowledge-articles-hero/multi-storey-car-park.jpg?as=1&w=1920&hash=E13FAC2B2C598C30D7DB74588E987B9DAF63F798);
+  background-repeat: no-repeat;
+  background-size:1370px 750px;
+  
+}
+h1 {
+  color: gold;
+  font-family: "Sofia", cursive;
+  font-size: 15px;
+  font-weight: bold;
+  font-size: 2.6em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.login {
+  width: 350px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  margin-left: -175px;
+  color: 	limE;
+}
+input[type="text"], input[type="password"] {
+  width: 350px;
+  padding: 20px 0px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  color:white;
+  font-size: 16px;
+}
+input[type=checkbox] {
+  display: none;
+}
+label 
+{
+  display: block;
+  position: absolute;
+  margin-right: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  content: "";
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 3px solid red;
+}
+
+#agree:checked ~ label[for=agree] {
+  background: #435160;
+}
+input[type="submit"] {
+  background: orange;
+  border: 0;
+  width: 350px;
+  height: 50px;
+  border-radius: 3px;
+  color: white 	;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+input[type="submit"]:hover {
+  background: Blue;
+  animation-name: shake;
+}
+.forgot {
+  margin-top: 30px;
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.forgot:hover {
+  margin-top: 30px;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+}
+.agree {
+  padding: 30px 0px;
+  font-size: 12px;
+  text-indent: 25px;
+  line-height: 15px;
+}
+::-webkit-input-placeholder {
+  color:  #FFFF00;
+  font-family: "Sofia", cursive;
+  font-size: 20px;
+}
+.animated {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+</style>
+</head>
+<body>
+<form method="post" action="vechicle_details.html">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+<div class='login'>
+<h1>Register</h1>
+<input name='username' placeholder='User Name' type='text' required>
+<input name='email' placeholder='E-Mail' type='text' required>
+<input name='moblie number' placeholder='Mobile Number' type='text' required>
+<input name='password' placeholder='Password' type='password' required>
+<div class='agree'>
+</div>
+<input class='animated' type='submit' value='Create Account'>
+<a class='forgot' href='homepage.html'>Already have an account?</a>
+</div>
+</body>
+</html>
